@@ -5,7 +5,7 @@
 
     $pdo = new PDO($dsn, $username, $password);
 
-    $stm = $pdo->quey("SELECT * FROM countries");
+    $stm = $pdo->query("SELECT * FROM countries");
 
     $rows = $stm->fetchAll(PDO::FETCH_ASSOC);
 
