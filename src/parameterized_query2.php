@@ -1,6 +1,6 @@
 <?PHP
     $dsn = "mysql:host=localhost;dbname=oture";
-    $username = "oture";
+    $username = "tony";
     $password = "0m46emJj8p0ziPC6";
 
     $pdo = new PDO($dsn, $username, $password);
@@ -16,5 +16,5 @@
     echo "ID : " . $row['id'] . PHP_EOL;
     echo "Name : " . $row['name'] . PHP_EOL;
     echo "Populcatio : " . $row['population'] . PHP_EOL;
-    
+
 ?>
