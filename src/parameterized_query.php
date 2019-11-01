@@ -5,7 +5,7 @@
 
     $pdo = new PDO($dsn, $username, $password);
 
-    $id = 12;
+    $id = 11;
     $stm = $pdo->prepare("SELECT * FROM countries WHERE id = ?");
     $stm->bindValue(1, $id);
     $stm->execute();
