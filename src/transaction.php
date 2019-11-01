@@ -8,8 +8,8 @@
     try {
 
         $pdo->beginTransaction();
-        $stm = $pdo->exec("INSERT INTO countries(name,population) VALUE ('Iraq', 3827400)");
-        $stm = $pdo->exec("INSERT INTO countries(name,population) VALUE ('Uganda', 37673800)");
+        $stm = $pdo->exec("INSERT INTO countries(name,population) VALUES ('Iraq', 3827400)");
+        $stm = $pdo->exec("INSERT INTO countries(name,population) VALUES ('Uganda', 37673800)");
 
         $pdo->commit();
     } catch(Exception $e) {
