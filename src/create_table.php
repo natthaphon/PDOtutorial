@@ -13,6 +13,6 @@
     $pdo->exec("INSERT INTO words(word) VALUES ('hum')");
     $pdo->exec("INSERT INTO words(word) VALUES ('den')");
 
-    $rowid = $pdo->lastInsert();
+    $rowid = $pdo->lastInsertId();
     echo "THE last insert row id is $rowid" . "<br />";
 ?>
