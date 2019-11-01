@@ -10,7 +10,8 @@
     $rows = $stm->fetchAll(PDO::FETCH_ASSOC);
 
     foreach($rows as $row){
-        printf("{$row['id']} {$row['name']} {$row['population']} '\n' ");
+        printf("{$row['id']} {$row['name']} {$row['population']}");
+        printf("\n");
 
     }
 ?>
