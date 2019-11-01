@@ -8,7 +8,7 @@
     $rows = $stm->fetchAll(PDO::FETCH_NUM);
 
     foreach($rows as $row){
-        printf("$row[0] $row[1] $row[2] \n" );
+        printf("$row[0] $row[1] $row[2]\n" );
 
     }
 ?>
